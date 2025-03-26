@@ -1,23 +1,32 @@
-scree .topnav {
-  background-color: #333;
+.topnav {
+  background-color: #ffffff;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
+  color: #1e3a5f;
+  font-style: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: Codec;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #1e3a5f;
+  color: white;
 }
 
 .topnav a.active {
   background-color: #000000;
   color: white;
+}
+
+@font-face {
+  font-family: Codec;
+  src: url(/fonts/CodecPro-Regular.ttf);
 }

@@ -7,6 +7,10 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #fdfdfd;
   color: #333;
@@ -29,7 +33,7 @@ header {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: Codec;
+  font-family: "codec";
   font-weight: bold;
   border-radius: 5px;
   text-transform: uppercase;
@@ -50,7 +54,7 @@ header {
 }
 
 @font-face {
-  font-family: Codec;
+  font-family: "codec";
   src: url(/fonts/CodecPro-Regular.ttf);
 }
 
@@ -177,61 +181,136 @@ footer .social-media a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .topnav {
-    flex-direction: column;
-  }
-
-  .topnav a {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .logo {
-    width: 80px;
-  }
+.hero-banner {
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.hero-banner h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.hero-banner p {
+  font-size: 1.5em;
+  margin: 10px 0 0;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero-banner h1,
+.hero-banner p {
+  position: relative;
+  z-index: 2;
+}
+.hero-banner button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hero-banner button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.hero-banner button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.hero-banner button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 480px) {
-  .topnav a {
-    padding: 8px;
-    font-size: 12px;
-  }
-
-  .logo {
-    width: 60px;
-  }
+.hero-banner a {
+  text-decoration: none;
+  z-index: 2;
 }
-
-@media (max-width: 320px) {
-  .topnav a {
-    padding: 6px;
-    font-size: 10px;
-  }
-
-  .logo {
-    width: 50px;
-  }
+.featured-travels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "codec";
+  flex-direction: column;
+  margin-top: 20px;
 }
-
-@media (max-width: 240px) {
-  .topnav a {
-    padding: 4px;
-    font-size: 8px;
-  }
-
-  .logo {
-    width: 40px;
-  }
+.featured-travels h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-
-@media (max-width: 120px) {
-  .topnav a {
-    padding: 2px;
-    font-size: 6px;
-  }
-
-  .logo {
-    width: 30px;
-  }
+.travel-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: calc(20% - 40px);
+  transition: transform 0.3s ease;
+}
+.travel-card:hover {
+  transform: translateY(-5px);
+}
+.travel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.travels-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: #000000 1px solid;
+  text-align: center;
+  font-family: "codec";
 }

@@ -225,13 +225,25 @@ footer .social-media a:hover {
   }
 }
 
-@media (max-width: 120px) {
-  .topnav a {
-    padding: 2px;
-    font-size: 6px;
-  }
+.topnav a {
+  padding: 2px;
+  font-size: 6px;
+}
 
-  .logo {
-    width: 30px;
-  }
+.logo {
+  width: 30px;
+}
+.des1 {
+  border-style: dashed;
+  width: 30%;
+}
+
+.des2 {
+  border-style: dashed;
+  width: 40%;
+}
+
+.des3 {
+  border-style: dashed;
+  width: 30%;
 }

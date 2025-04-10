@@ -10,54 +10,71 @@
     <link rel="favicon" href="/images/favicon.ico" />
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <img src="/images/logo + typeface white.png" alt="Logo" />
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#news">Destinations</a></li>
-            <li><a href="#tours">Tours</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    <header>
+      <div class="topnav">
+        <img
+          src="/images/logo + typeface white.png"
+          alt="Voyara Logo"
+          class="logo"
+        />
+        <nav>
+          <a href="#home" class="active">Home</a>
+          <a href="/html/news.html">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
         </nav>
       </div>
     </header>
 
-    <div class="hero">
-      <div class="container">
-        <h1>Discover Your Next Adventure</h1>
-        <p>Explore the world with our curated travel experiences</p>
-      </div>
-    </div>
+    <section class="hero-banner">
+      <h1>Discover Your Next Adventure with voyara.al</h1>
+      <p>Explore curated destinations and plan your dream getaway.</p>
+      <a href="#travels"
+        ><button class="cta-button">Explore Destinations</button></a
+      >
+    </section>
 
-    <main class="container">
-      <section class="featured-travels">
-        <h2>Featured Travels</h2>
-        <div class="travels-grid">
-          <div class="travel-card">
-            <div
-              class="card-image"
-              style="background-image: url('/images/paris.jpg')"
-            >
-              <div class="category-tag">Europe</div>
-            </div>
-            <div class="card-content">
-              <h3>Paris</h3>
-              <p class="meta">City of Lights & Romance</p>
-              <p>
-                Experience the magic of Paris with our exclusive tours to the
-                Eiffel Tower, Louvre, and more.
-              </p>
-              <a href="#" class="read-more"
-                >Learn More <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
+    <section class="featured-travels" id="travels">
+      <h2>Featured Destinations</h2>
+      <div class="travels-container">
+        <div class="travel-card">
+          <img src="/images/paris.jpg" alt="Paris" />
+          <h3>Paris, France</h3>
+          <p>
+            Experience the romance of the City of Lights, from iconic landmarks
+            to charming cafes.
+          </p>
+          <button class="cta-button">Learn More</button>
+        </div>
+        <div class="travel-card">
+          <img src="/images/vienna.jpeg" alt="Vienna" />
+          <h3>Vienna, Austria</h3>
+          <p>
+            Immerse yourself in imperial history and classical music in the
+            heart of Europe.
+          </p>
+          <button class="cta-button">Learn More</button>
+        </div>
+        <div class="travel-card">
+          <img src="/images/dubai.jpg" alt="Dubai" />
+          <h3>Dubai, UAE</h3>
+          <p>
+            Discover a futuristic metropolis with luxury shopping, stunning
+            architecture, and desert adventures.
+          </p>
+          <button class="cta-button">Learn More</button>
+        </div>
+        <div class="travel-card">
+          <img src="/images/rome.jpg" alt="Rome" />
+          <h3>Rome, Italy</h3>
+          <p>
+            Walk through ancient history, indulge in delicious cuisine, and
+            experience the vibrant culture of Rome.
+          </p>
+          <button class="cta-button">Learn More</button>
+        </div>
+      </div>
+    </section>
 
           <div class="travel-card">
             <div
@@ -164,6 +181,10 @@
             <a href="#">Cookie Policy</a>
           </div>
         </div>
+      </div>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
       </div>
     </footer>
   </body>

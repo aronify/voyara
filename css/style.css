@@ -1,190 +1,311 @@
-/* Base Styles */
-:root {
-  --primary-color: #1e3a5f;
-  --primary-light: #2a4d7a;
-  --secondary-color: #f5a623;
-  --light-color: #f8f9fa;
-  --dark-color: #212529;
-  --gray-color: #6c757d;
-  --light-gray: #e9ecef;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Codec";
-  src: url(/fonts/CodecPro-Regular.ttf) format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* General styles */
 body {
   font-family: "Codec", sans-serif;
-  line-height: 1.6;
-  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: #1e3a5f; /* Dark blue for text */
+  background-color: #fff; /* White background */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
   background-color: #fff;
+  color: #1e3a5f;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.75rem;
+.topnav a {
+  color: #1e3a5f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Codec", sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  transition: 0.3s ease;
 }
 
-h1 {
-  font-size: 2.5rem;
+.topnav a:hover,
+.topnav a.active {
+  background-color: #1e3a5f;
+  border-radius: 8px;
+  color: white;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-/* Header Styles */
-.main-header {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 1rem 0;
-}
-
-.main-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+@font-face {
+  font-family: "Codec";
+  src: url(/fonts/CodecPro-Regular.ttf);
 }
 
 .logo {
-  width: 40px;
-}
-.logo img {
-  width: 150px;
+  width: 120px;
+  height: auto;
 }
 
-.main-nav ul {
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  background-color: #1e3a5f;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #152945; /* Darker hover */
+}
+
+.image-container {
+  margin-top: 30px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  margin-top: 30px;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #1e3a5f;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #152945;
+}
+
+.about-section {
+  margin-top: 60px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.image-gallery {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.testimonials {
+  padding: 40px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-list {
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.main-nav li {
-  margin-left: 1.5rem;
+.testimonial-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.main-nav a {
-  color: var(--dark-color);
-  font-weight: 500;
-  transition: color 0.3s;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e3a5f;
+  color: #fff;
+}
+
+footer .social-media a {
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+.hero-banner {
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
   position: relative;
-  padding: 0.5rem 0;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
-.main-nav a:hover {
-  color: var(--primary-color);
-}
-
-.main-nav a.active {
-  color: var(--primary-color);
+.hero-banner h1 {
+  font-size: 3.5em;
+  margin: 0;
   font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Codec", sans-serif;
 }
 
-.main-nav a.active:after {
+.hero-banner p {
+  font-size: 1.7em;
+  margin: 15px 0 0;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-family: "Codec", sans-serif;
+}
+
+.hero-banner::before {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-/* Hero Section */
-.hero {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 6rem 0;
-  text-align: center;
-  margin-bottom: 3rem;
-  background-image: linear-gradient(
-      rgba(30, 58, 95, 0.8),
-      rgba(30, 58, 95, 0.8)
-    ),
-    url("/images/hero.jpg");
-  background-size: cover;
-  background-position: center;
+.hero-banner h1,
+.hero-banner p {
+  position: relative;
+  z-index: 2;
 }
 
-.hero h1 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  opacity: 0.9;
-  font-size: 1.2rem;
-}
-
-/* Featured Travels */
 .featured-travels {
-  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Codec", sans-serif;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .featured-travels h2 {
-  color: var(--primary-color);
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 3.2em;
+  margin-bottom: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.travels-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
-}
-
 .travel-card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 25px;
+  width: calc(45% - 30px);
+  transition: transform 0.3s ease;
 }
 
 .travel-card:hover {
@@ -192,208 +313,36 @@ p {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.card-image {
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.travel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-.category-tag {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 700;
+.travel-card p {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.card-content {
-  padding: 1.5rem;
-}
-
-.card-content h3 {
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
-.card-content .meta {
-  color: var(--gray-color);
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.card-content p {
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.read-more {
-  display: inline-flex;
-  align-items: center;
-  color: var(--primary-color);
-  font-weight: 700;
-  transition: color 0.3s;
-}
-
-.read-more i {
-  margin-left: 0.5rem;
-  transition: transform 0.3s;
-}
-
-.read-more:hover {
-  color: var(--primary-light);
-}
-
-.read-more:hover i {
-  transform: translateX(3px);
-}
-
-/* Footer */
-.main-footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 3rem 0 1rem;
-}
-
-.footer-logo {
-  margin-bottom: 50px;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.links-column h4 {
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-
-.links-column h4:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: var(--secondary-color);
-}
-
-.links-column ul {
-  list-style: none;
-}
-
-.links-column li {
-  margin-bottom: 0.5rem;
-}
-
-.links-column a {
-  color: rgba(255, 255, 255, 0.7);
-  transition: color 0.3s;
-}
-
-.links-column a:hover {
-  color: white;
-}
-
-.social-links {
+.travels-container {
   display: flex;
-  gap: 1rem;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
-
-.social-links a:hover {
-  background-color: var(--secondary-color);
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: #eee 1px solid;
+  text-align: center;
+  font-family: "Codec", sans-serif;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  margin-bottom: 0;
-}
-
-.legal-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.legal-links a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  transition: color 0.3s;
-}
-
-.legal-links a:hover {
-  color: white;
-}
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .main-header .container {
-    flex-direction: column;
-  }
-
-  .logo {
-    margin-bottom: 40px;
-  }
-
-  .main-nav {
-    margin-bottom: 1.5rem;
-  }
-
-  .main-nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .main-nav li {
-    margin: 0 0.75rem 0.5rem;
-  }
-
-  .hero {
-    padding: 4rem 0;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .travels-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .legal-links {
-    margin-top: 1rem;
+  .travel-card {
+    width: calc(90% - 30px);
   }
 }

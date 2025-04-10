@@ -3,33 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <title>Voyara - Travel News</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/codec" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/newsstyle.css"" />
   </head>
-  <body></body>
-</html>
-<div class="des1">
-  <h1>paris</h1>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo + typeface white.png" alt="logo" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <img
-    src="https://th.bing.com/th/id/OIP.hFerDydqC2-O_HiZb80wwQHaLG?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-    alt="pariss"
-  />
-  <h2>47$</h2>
-</div>
-<div class="des2">
-  <h1>Rome</h1>
-  <img
-    src="https://ts3.mm.bing.net/th?id=OIP.myUev7Xlll0qJvv-O7MauQHaE0&pid=15.1"
-    alt="rome"
-  />
-  <h2>117$</h2>
-</div>
-<div class="des3">
-  <h1>Dubai</h1>
-  <img
-    src="https://th.bing.com/th/id/OIP.7TGrX5UdzRHQL_VZRgGQ-gHaFj?w=230&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-    alt="Dubai"
-  />
-  <h2>341$</h2>
-</div>
+    <div class="hero">
+      <div class="container">
+        <h1>Voyara Travel News</h1>
+        <p>
+          Stay updated with the latest travel trends and destination updates
+        </p>
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="featured-article">
+        <div
+          class="article-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="category-tag">Featured Story</div>
+        </div>
+        <div class="article-content">
+          <h2>Lorem Ipsum Dolor Sit Amet Consectetur</h2>
+          <p class="meta">Posted on June 15, 2025 • 5 min read</p>
+          <p class="excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+            dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed
+            auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in
+            nulla enim. Phasellus molestie magna non est bibendum non venenatis
+            nisl tempor.
+          </p>
+          <a href="article.html?id=1" class="read-more"
+            >Read Full Story <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="news-grid">
+        <article class="news-card">
+          <div
+            class="card-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="category-tag">Travel Tips</div>
+          </div>
+          <div class="card-content">
+            <h3>Lorem Ipsum Dolor Sit Amet</h3>
+            <p class="meta">June 10, 2025 • 3 min read</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+              dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+            </p>
+            <a href="article.html?id=2" class="read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div
+            class="card-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="category-tag">Company News</div>
+          </div>
+          <div class="card-content">
+            <h3>Consectetur Adipiscing Elit</h3>
+            <p class="meta">June 5, 2025 • 2 min read</p>
+            <p>
+              Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut
+              in nulla enim. Phasellus molestie magna non est bibendum.
+            </p>
+            <a href="article.html?id=3" class="read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div
+            class="card-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="category-tag">Special Offer</div>
+          </div>
+          <div class="card-content">
+            <h3>Nullam In Dui Mauris Vivamus</h3>
+            <p class="meta">May 28, 2025 • 4 min read</p>
+            <p>
+              Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor
+              neque eu tellus rhoncus ut eleifend nibh porttitor.
+            </p>
+            <a href="article.html?id=4" class="read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div
+            class="card-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="category-tag">Destination</div>
+          </div>
+          <div class="card-content">
+            <h3>Hendrerit Arcu Sed Erat</h3>
+            <p class="meta">May 20, 2025 • 6 min read</p>
+            <p>
+              Ut in nulla enim. Phasellus molestie magna non est bibendum non
+              venenatis nisl tempor. Lorem ipsum dolor sit amet.
+            </p>
+            <a href="article.html?id=5" class="read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div
+            class="card-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="category-tag">Travel Tips</div>
+          </div>
+          <div class="card-content">
+            <h3>Molestie Magna Non Est</h3>
+            <p class="meta">May 15, 2025 • 5 min read</p>
+            <p>
+              Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut
+              in nulla enim. Phasellus molestie magna non est bibendum.
+            </p>
+            <a href="article.html?id=6" class="read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div
+            class="card-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1518544864413-ddf59f0c3f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="category-tag">Industry</div>
+          </div>
+          <div class="card-content">
+            <h3>Bibendum Non Venenatis</h3>
+            <p class="meta">May 10, 2025 • 4 min read</p>
+            <p>
+              Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie
+              vehicula. Sed auctor neque eu tellus rhoncus ut eleifend.
+            </p>
+            <a href="article.html?id=7" class="read-more">Read More</a>
+          </div>
+        </article>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="/images/logo + typeface white.png" alt="logo" />
+        </div>
+        <div class="footer-links">
+          <div class="links-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Safety Information</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 voyara.al All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -6,61 +6,165 @@
     <title>voyara.al</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.cdnfonts.com/css/codec" rel="stylesheet" />
+    <link rel="favicon" href="/images/favicon.ico" />
   </head>
   <body>
-    <header>
-      <div class="topnav">
-        <img src="/images/logo + typeface white.png" alt="Logo" class="logo" />
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo + typeface white.png" alt="Logo" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#news">Destinations</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <div class="hero-banner">
-      <h1>Welcome to voyara.al</h1>
-      <p>Your one-stop solution for all your needs.</p>
-      <a href="#travels"><button class="cta-button">Get Started</button></a>
+
+    <div class="hero">
+      <div class="container">
+        <h1>Discover Your Next Adventure</h1>
+        <p>Explore the world with our curated travel experiences</p>
+      </div>
     </div>
 
-    <section class="featured-travels" id="travels">
-      <h2>Featured Travels</h2>
-      <div class="travels-container">
-        <div class="travel-card">
-          <img src="/images/paris.jpg" alt="Travel 1" />
-          <h3>Paris</h3>
-          <p>Description of travel destination 1.</p>
-          <button class="cta-button">Learn More</button>
-        </div>
-        <div class="travel-card">
-          <img src="/images/vienna.jpeg" alt="Travel 2" />
-          <h3>Vienna</h3>
-          <p>Description of travel destination 2.</p>
-          <button class="cta-button">Learn More</button>
-        </div>
-        <div class="travel-card">
-          <img src="/images/dubai.jpg" alt="Travel 3" />
-          <h3>Dubai</h3>
-          <p>Description of travel destination 3.</p>
-          <button class="cta-button">Learn More</button>
-        </div>
-        <div class="travel-card">
-          <img src="/images/rome.jpg" alt="Travel 4" />
-          <h3>Rome</h3>
-          <p>Description of travel destination 4.</p>
-          <button class="cta-button">Learn More</button>
-        </div>
-      </div>
-    </section>
+    <main class="container">
+      <section class="featured-travels">
+        <h2>Featured Travels</h2>
+        <div class="travels-grid">
+          <div class="travel-card">
+            <div
+              class="card-image"
+              style="background-image: url('/images/paris.jpg')"
+            >
+              <div class="category-tag">Europe</div>
+            </div>
+            <div class="card-content">
+              <h3>Paris</h3>
+              <p class="meta">City of Lights & Romance</p>
+              <p>
+                Experience the magic of Paris with our exclusive tours to the
+                Eiffel Tower, Louvre, and more.
+              </p>
+              <a href="#" class="read-more"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
 
-    <footer>
-      <p>&copy; 2025 voyara.al. All rights reserved.</p>
-      <div class="social-media">
-        <a href="#facebook">Facebook</a>
-        <a href="#twitter">Twitter</a>
-        <a href="#instagram">Instagram</a>
+          <div class="travel-card">
+            <div
+              class="card-image"
+              style="background-image: url('/images/vienna.jpeg')"
+            >
+              <div class="category-tag">Europe</div>
+            </div>
+            <div class="card-content">
+              <h3>Vienna</h3>
+              <p class="meta">Imperial City of Music</p>
+              <p>
+                Discover Vienna's imperial palaces, classical music heritage,
+                and famous coffee houses.
+              </p>
+              <a href="#" class="read-more"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="travel-card">
+            <div
+              class="card-image"
+              style="background-image: url('/images/dubai.jpg')"
+            >
+              <div class="category-tag">Middle East</div>
+            </div>
+            <div class="card-content">
+              <h3>Dubai</h3>
+              <p class="meta">City of Superlatives</p>
+              <p>
+                From desert safaris to luxury shopping, Dubai offers
+                unforgettable experiences.
+              </p>
+              <a href="#" class="read-more"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="travel-card">
+            <div
+              class="card-image"
+              style="background-image: url('/images/rome.jpg')"
+            >
+              <div class="category-tag">Europe</div>
+            </div>
+            <div class="card-content">
+              <h3>Rome</h3>
+              <p class="meta">Eternal City</p>
+              <p>
+                Walk through history in Rome with visits to the Colosseum,
+                Vatican, and ancient ruins.
+              </p>
+              <a href="#" class="read-more"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="/images/logo + typeface white.png" alt="logo" />
+        </div>
+        <div class="footer-links">
+          <div class="links-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Safety Information</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 voyara.al All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
       </div>
-      <p>Privacy Policy | Terms of Service</p>
     </footer>
   </body>
 </html>

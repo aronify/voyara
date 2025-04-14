@@ -2,53 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/newsstyle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link
       rel="shortcut icon"
       href="/images/logo + typeface white.png"
-      type="image/x-icon"/>
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <h1>Contact Us</h1>
-
-    <div>
-      <h3>Location</h3>
-      Rruga Osman Myderizi, Tirana, 1060
-    </div>
-    <div>
-      <h3>Give us a call</h3>
-      <p>+355682955948</p>
-    </div>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-       
-    
-        </style>
-      </head>
-      <body>
-        <div class="form-container">
-          <h2>Contact Us</h2>
-          <form action="/submit" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="6"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo + typeface white.png" alt="logo" />
         </div>
-      </body>
-    </html>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="form-container">
+      <h2>Contact Us</h2>
+      <form action="/submit" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="6"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="/images/logo + typeface white.png" alt="logo" />
+        </div>
+        <div class="footer-links">
+          <div class="links-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Safety Information</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 voyara.al All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

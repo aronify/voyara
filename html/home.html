@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>voyara.al</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/newsstyle.css"" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.cdnfonts.com/css/codec" rel="stylesheet" />
     <link rel="favicon" href="/images/favicon.ico" />
   </head>
   <body>
-    <header>
-      <div class="topnav">
-        <img
-          src="/images/logo + typeface white.png"
-          alt="Voyara Logo"
-          class="logo"
-        />
-        <nav>
-          <a href="#home" class="active">Home</a>
-          <a href="/html/news.html">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo + typeface white.png" alt="logo" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -75,69 +75,68 @@
         </div>
       </div>
     </section>
-
-          <div class="travel-card">
-            <div
-              class="card-image"
-              style="background-image: url('/images/vienna.jpeg')"
-            >
-              <div class="category-tag">Europe</div>
-            </div>
-            <div class="card-content">
-              <h3>Vienna</h3>
-              <p class="meta">Imperial City of Music</p>
-              <p>
-                Discover Vienna's imperial palaces, classical music heritage,
-                and famous coffee houses.
-              </p>
-              <a href="#" class="read-more"
-                >Learn More <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="travel-card">
-            <div
-              class="card-image"
-              style="background-image: url('/images/dubai.jpg')"
-            >
-              <div class="category-tag">Middle East</div>
-            </div>
-            <div class="card-content">
-              <h3>Dubai</h3>
-              <p class="meta">City of Superlatives</p>
-              <p>
-                From desert safaris to luxury shopping, Dubai offers
-                unforgettable experiences.
-              </p>
-              <a href="#" class="read-more"
-                >Learn More <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="travel-card">
-            <div
-              class="card-image"
-              style="background-image: url('/images/rome.jpg')"
-            >
-              <div class="category-tag">Europe</div>
-            </div>
-            <div class="card-content">
-              <h3>Rome</h3>
-              <p class="meta">Eternal City</p>
-              <p>
-                Walk through history in Rome with visits to the Colosseum,
-                Vatican, and ancient ruins.
-              </p>
-              <a href="#" class="read-more"
-                >Learn More <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
+    <h1>News</h1>
+    <section class="news-grid">
+      <article class="news-card">
+        <div
+          class="card-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="category-tag">Travel Tips</div>
         </div>
-      </section>
-    </main>
+        <div class="card-content">
+          <h3>Lorem Ipsum Dolor Sit Amet</h3>
+          <p class="meta">June 10, 2025 • 3 min read</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+            dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+          <a href="news.html" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div
+          class="card-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="category-tag">Company News</div>
+        </div>
+        <div class="card-content">
+          <h3>Consectetur Adipiscing Elit</h3>
+          <p class="meta">June 5, 2025 • 2 min read</p>
+          <p>
+            Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in
+            nulla enim. Phasellus molestie magna non est bibendum.
+          </p>
+          <a href="news.html" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div
+          class="card-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="category-tag">Special Offer</div>
+        </div>
+        <div class="card-content">
+          <h3>Nullam In Dui Mauris Vivamus</h3>
+          <p class="meta">May 28, 2025 • 4 min read</p>
+          <p>
+            Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque
+            eu tellus rhoncus ut eleifend nibh porttitor.
+          </p>
+          <a href="news.html" class="read-more">Read More</a>
+        </div>
+      </article>
+    </section>
 
     <footer class="main-footer">
       <div class="container">
@@ -181,10 +180,6 @@
             <a href="#">Cookie Policy</a>
           </div>
         </div>
-      </div>
-      <div class="footer-links">
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#terms">Terms of Service</a>
       </div>
     </footer>
   </body>

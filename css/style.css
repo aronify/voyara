@@ -12,61 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: #fff;
-  color: #1e3a5f;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.topnav {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.topnav a {
-  color: #1e3a5f;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: "Codec", sans-serif;
-  font-weight: bold;
-  border-radius: 8px;
-  text-transform: uppercase;
-  margin: 0 10px;
-  transition: 0.3s ease;
-}
-
-.topnav a:hover,
-.topnav a.active {
-  background-color: #1e3a5f;
-  border-radius: 8px;
-  color: white;
-}
-
 @font-face {
   font-family: "Codec";
   src: url(/fonts/CodecPro-Regular.ttf);
-}
-
-.logo {
-  width: 120px;
-  height: auto;
-}
-
-.container {
-  text-align: center;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .cta-button {

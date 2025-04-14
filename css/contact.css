@@ -1,14 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 40px;
+  background-image: url("/images/hero.jpg");
 }
 
 .form-container {
   max-width: 500px;
   background: #fff;
   padding: 30px;
-  margin: auto;
+  margin: 50px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -26,6 +25,7 @@ textarea {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  resize: none;
 }
 
 button {
